@@ -1,3 +1,7 @@
+
+# Contains Custom NSE scripts 
+
+
 # CVE-2020-0796
 NSE script to detect vulnerable CVE-2020-0796 issue, with Microsoft SMBv3 Compression (aka coronablue, SMBGhost)
 
