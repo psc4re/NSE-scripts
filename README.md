@@ -57,3 +57,23 @@ Run as
 
  ``sudo nmap -sSU -p53 --script cve-2020-1350 <<target>> --script-args output=<outputfile.txt>``
 
+
+# http-custom-title
+
+NSE Script to search for custom HTTP titles provided as script arguments. This script helps in searching and providing only results of HTTP titles required. 
+
+# Installation and running
+
+Copy the .nse file to nmap/scripts/ folder and run update
+
+``cp http-custom-title.nse /usr/share/nmap/scripts/``
+
+``nmap --script-updatedb``
+
+Run as 
+
+``nmap --script ./http-custom-title.nse -p80 scanme.nmap.org  --script-args customtitle='ScanMe'``
+
+``nmap --script ./http-custom-title.nse <<target>>  --script-args customtitle='Apache'``
+
+
