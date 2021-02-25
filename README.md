@@ -81,3 +81,18 @@ Run as
 ``nmap --script ./http-custom-title.nse <<target>>  --script-args customtitle='Apache'``
 
 
+# vCenter RCE CVE-2021-21972 check
+
+For checking against CVE-2021-21972, CVE-2021-21973 Vulnerability in vCenter. The script also additionally prints the vSphere Version and Build Number
+
+Copy the .nse file to nmap/scripts/ folder and run update
+
+``cp cve-2021-21972.nse /usr/share/nmap/scripts/``
+
+``nmap --script-updatedb``
+
+Run as 
+
+``nmap --script cve-2021-21972.nse -p443 <host> (optional: --script-args output=report.txt)``
+
+
