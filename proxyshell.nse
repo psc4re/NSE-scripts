@@ -5,7 +5,7 @@ local string = require "string"
 
 description = [[
 Script by @psc4re for checking against Outlook Exchange Server ProxyShell Vulnerability CVE-2021-34473
-Credits: https://github.com/dinosn/proxyshell for python script. 
+Credits: https://twitter.com/bad_packets/status/1426968952278708225 for packet info 
 ]]
 
 
