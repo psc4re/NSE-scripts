@@ -25,7 +25,7 @@ portrule = shortport.http
 local function getVulnStatus(host, port)
     testpayload = "/autodiscover/autodiscover.json?@test.com/owa/?&Email=autodiscover/autodiscover.json%3F@test.com"
     httpresp = http.get(host, port, testpayload)
-    if(httpresp['status'] = 302 ) then
+    if(httpresp['status'] == 302 ) then
         return "Vulnerable to ProxyShell Vulnerability CVE-2021-34473!"
     end
 end
